@@ -28,7 +28,7 @@ def get_english_words():
 # Создаём функцию, которая будет делать саму игру
 def word_game():
     print("Добро пожаловать в игру")
-    translator = GoogleTranslator()  # Создаём экземпляр GoogleTranslator
+    translator = GoogleTranslator(source='en', target='ru')  # Создаём экземпляр GoogleTranslator
     while True:
         # Создаём функцию, чтобы использовать результат функции-словаря
         word_dict = get_english_words()
