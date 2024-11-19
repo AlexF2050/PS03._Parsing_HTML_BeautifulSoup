@@ -51,9 +51,7 @@ def word_game():
         print(f"Значение слова - {translated_definition}")
         user = input("Что это за слово? ")
 
-        # Выводим переведенное слово для информации
-        print(f"Загаданное слово на английском: {translated_word}")
-
+        
         if user.lower() == word.lower():  # Игнорируем регистр
             print("Все верно!")
         else:
