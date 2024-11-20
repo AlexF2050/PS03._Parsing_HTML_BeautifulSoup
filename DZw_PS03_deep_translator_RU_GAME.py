@@ -51,16 +51,16 @@ def word_game():
         print(f"Значение слова - {translated_definition}")
         user = input("Что это за слово? ")
 
-        
+
         if user.lower() == word.lower():  # Игнорируем регистр
             print("Все верно!")
         else:
             print(f"Ответ неверный, было загадано это слово - {translated_word}")
 
         # Создаём возможность закончить игру
-        play_again = input("Хотите сыграть еще раз? y/n: ")
-        if play_again.lower() != "y":
-                print("Спасибо за игру!")
-        break
+        play_again = input("Хотите сыграть еще раз? да/нет: ")
+        if play_again.lower() != "да": #
+            print("Спасибо за игру!")
+            break
 
 word_game()
